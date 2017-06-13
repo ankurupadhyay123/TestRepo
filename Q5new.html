@@ -1,0 +1,47 @@
+<html>
+<head>
+</head>
+
+<body>
+<form id="form" action="javascript:feedentry();">
+	<p>Name:</p>
+	<input id="name" type="text" placeholder="Enter a name" required></input>
+
+	<p>Age:</p>
+	<input id="age" type="number" placeholder="Enter your age" required></input>
+
+	<p>Salary:</p>
+	<input id="salary" type="number" placeholder="Enter your salary(in Rs.)" required></input>
+
+	<p>Date Of Birth:</p>
+	<input id="dob" type="date" placeholder="Enter DOB" required></input>
+	<br>
+
+</form>
+	<button type="submit" form="form">Submit</button>
+	<button onclick="fless5();">Fetch&lt;5000</button>
+	<button onclick="showtables();">Fetch All</button>
+	<button onclick="falll();" disabled>Fetch Groups</button>
+	<button onclick="finc();">Fetch To Inc</button>
+<table>
+		<thead>
+			<tr>
+				<th colspan="2">Name</th>
+				<th>Age</th>
+				<th>Salary</th>
+				<th>DOB</th>
+			</tr>
+		</thead>
+		<tbody id="s_tableBody">
+			<tr>
+				<td colspan="2"></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+
+<script type="text/javascript" src="Q5.js"></script>
+</body>
+</html>
