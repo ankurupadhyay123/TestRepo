@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+<div style="font-size:90px" class="my">this is in div tag</div>
+
+<p style="font-size:150px" class="my">this is in p tag</p>
+
+<span style="font-size:50px" class="my">this is in span tag</span>
+<br class="my">
+<button class="my">Click to tell max height</button>
+<p id="i1" style="font-weight:bold; font-size:30px;"></p>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+var e=[];
+var a=0;
+ $(".my").each(function(){
+            e[a++] = $(this).height();
+        });
+	document.getElementById("i1").innerHTML="Maximum Height is "+Math.max.apply(null,e);
+    });
+});
+</script>
+</body>
+
+</html>
