@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+<p id="main">
+	this text present in the parent p
+	<p class="target">
+	this text child in the parent p
+	</p>
+</p>
+
+<script>
+   jQuery(document).ready(function() {
+        jQuery("#main .target").css('disabled',true);
+    });
+
+</script>
+</body>
+
+</html>

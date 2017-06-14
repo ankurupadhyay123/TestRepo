@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+<div id="main">
+this text comes under div tag
+</div>
+
+
+
+<script>
+var e1 = jQuery("<p>this text comes under p tag</p>", {
+	id: "abc"
+	});   
+jQuery(document).ready(function() {
+        jQuery("div#main").html(e1);
+    });
+
+</script>
+</body>
+
+</html>
