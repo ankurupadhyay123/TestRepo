@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+<div id="main">Parent tag
+	<p class="target">first child element</p>
+	<p class="target">second child element</p>
+	<p class="target">third child element</p>
+	<p class="target">fourth child element</p>
+	<p>fifth child element</p>
+</div>
+
+<div>Another tag
+</div>
+<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+
+<script>
+
+jQuery(document).ready(function(){
+jQuery("#main .target").css('font-size','12px');
+});
+
+</script>
+</body>
+</html>
