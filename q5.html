@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>TO THE NEW</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+.info {
+	font-size: 14px;
+}
+</style>
+</head>
+<body style="width: 100%; margin: 20px">
+
+<div id="section1" style="float: left;width: 50%">
+	<form method="POST" action="javascript:void(0);">
+	  Name:<br>
+	  <input type="text" name="name" id="name" placeholder="Enter Name" required>
+	  <br><br>
+	  Age:<br>
+	  <input type="number" name="age" id="age" placeholder="Enter Age" required>
+	  <br><br>
+	  Salary:<br>
+	  <input type="number" name="salary" id="salary" placeholder="Enter Salary" required>
+	  <br><br>
+	  Date Of Birth:<br>
+	  <input type="date" name="dob" id="dob" placeholder="Enter DOB" required>
+	  <br><br>
+	  <input type="submit" value="Submit" onclick="feedEntry();">
+	</form>
+	<br>
+	<button onclick="salGreaterThan5000();"> 1 </button>
+	<button onclick="showAll();"> 2 </button>
+	<button onclick="groupOnAge();"> 3 </button>
+	<button onclick="fetch();"> 4 </button>
+	<p class="info">Click 1 to show all employees with salary greater than 5000</p>
+	<p class="info">Click 2 to show all employees</p>
+	<p class="info">Click 3 to show grouped employee on the basis of their age(look at console)</p>
+	<p class="info">Click 4 to fetch employees with salary less than 1000 and age greater than 20 with an increment 5 times their salary.</p>
+</div>
+
+<div id="section2" style="float: left;width: 50%">
+
+	<table  id="myTable" style="width: 80%">
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Salary</th>
+				<th>DOB</th>
+			</tr>
+	</table>
+</div>
+
+<script type="text/javascript" src="q5.js">
+        
+</script>
+
+</body>
+</html>

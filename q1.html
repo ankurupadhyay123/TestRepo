@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+</head>
+<body>
+<script type="text/javascript">
+var p = parseFloat(prompt("Please enter principle amount(Rs.):"));
+var r = parseFloat(prompt("Please enter interest rate(%):"));
+var t = parseFloat(prompt("Please enter no. of years(yrs):"));
+
+    if(isNaN(p) || isNaN(r) || isNaN(t)){
+        alert("Please enter a number only");
+    }else{
+        var s = (p*r*t)/100;
+        var z = "Simple Interest is (Rs.) "+s;
+        alert(z);        
+    }
+    
+/*
+if(x != null && y != null && z != null ){
+}
+*/
+</script>
+
+</body>
+</html>
