@@ -15,6 +15,7 @@ public class Pro1 {
         Iterator<Float> floatIterator = floatList.iterator();
         while(floatIterator.hasNext()){
             Float obj = floatIterator.next();
+//TODO: DEclare Float obj outside the loop so that only one reference is created
             sum = sum + obj;
         }
         System.out.println(floatList);

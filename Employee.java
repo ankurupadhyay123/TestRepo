@@ -2,6 +2,7 @@ public class Employee{
 
     String name;
     double salary,age;
+// TODO: Good Practice is to mark variable of a class private and use public getter and setter
 
     public String getName() {
         return name;

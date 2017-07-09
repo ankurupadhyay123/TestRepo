@@ -5,6 +5,8 @@ import java.util.List;
 public class SpecialStack {
     final static int maxCapacity = 5;
     static List<Integer> stack = new ArrayList<Integer>(maxCapacity);
+
+//TODO: DO we really need this?????
     static List<Integer> sortStack = new ArrayList<>();
 
     int number;

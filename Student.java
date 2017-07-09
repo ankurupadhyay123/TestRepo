@@ -2,7 +2,7 @@ public class Student {
 
     String name;
     double score, age;
-
+// TODO: Good Practice is to mark variable of a class private and use public getter and setter
     public String getName() {
         return name;
     }
@@ -11,6 +11,7 @@ public class Student {
         return score;
     }
 
+//TODO: Is Age required of double type
     public double getAge() {
         return age;
     }
