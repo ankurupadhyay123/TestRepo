@@ -1,7 +1,13 @@
+import java.util.*;
+
 class Pro8{
 
 public static void main(String args[]){
-	StringBuffer name = new StringBuffer("Hello my name is Ankur");
+
+	Scanner sc = new Scanner(System.in); 
+	System.out.println("enter a string");
+	String str = sc.nextLine();
+	StringBuffer name = new StringBuffer(str);
 	name.reverse();
 	
 	System.out.println(name);

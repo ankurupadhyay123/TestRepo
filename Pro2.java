@@ -1,6 +1,13 @@
+import java.util.*;
+
 class Pro2{
 public static void main(String args[]){
-String name = "I have a Asus laptop Asus laptop Asus laptop laptop";
+
+Scanner sc = new Scanner(System.in); 
+System.out.println("Enter a string"); 
+String name = sc.nextLine();
+
+//String name = "I have a Asus laptop Asus laptop Asus laptop laptop";
 String[] words = name.split(" ");
 
 int[] c= new int[words.length];

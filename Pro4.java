@@ -1,7 +1,13 @@
+import java.util.*;
 class Pro4{
 
 public static void main(String args[]){
-String name = "I have a Asus laptop Asus laptop Asus laptop laptop";
+
+Scanner sc = new Scanner(System.in); 
+System.out.println("Enter a string"); 
+String name = sc.nextLine();
+
+//String name = "I have a Asus laptop Asus laptop Asus laptop laptop";
 
 int lc = 0 , uc = 0 , dig = 0, spec = 0,totchar =0;
 for(int i=0; i<name.length() ;i++){

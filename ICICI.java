@@ -1,8 +1,6 @@
-class ICICI extends Bank{
+package myjava;
 
-float rateOfInterest;
-int serviceCharges;	
-int noOfEmployees;
+class ICICI extends Bank{
 
 void getDetails(float rateOfInterest, int serviceCharges, int noOfEmployees){
 this.rateOfInterest = rateOfInterest;

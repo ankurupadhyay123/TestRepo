@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Pro11{
 
 int add(int a, int b){
@@ -23,17 +25,37 @@ int a;
 float b;
 double c;
 
-System.out.println(p.add(5,4));
-System.out.println(p.add(5.0,4.3));
-System.out.println(p.mul(5.2f,4.6f));
-System.out.println(p.mul(5,4));
+Scanner sc = new Scanner(System.in); 
+System.out.println("enter an integer");
+a=sc.nextInt();
 
-String s1 = "My" , s2 = " Name " ,s3 = "is Ankur";
+System.out.println("enter a float number");
+b=sc.nextFloat();
+
+System.out.println("enter a double");
+c=sc.nextDouble();
+
+System.out.println("Addition of Integers is "+p.add(a,a));
+System.out.println("Addition of double is "+p.add(c,c));
+System.out.println("Multiplication of float is "+p.mul(b,b));
+System.out.println("Multiplication of integers is "+p.mul(a,a));
+
+Scanner sc1 = new Scanner(System.in); 
+
+System.out.println("enter string 1");
+String s1 = sc1.nextLine();
+
+System.out.println("enter string 2");
+String s2 = sc1.nextLine();
+
+System.out.println("enter string 3");
+String s3 = sc1.nextLine();
+
 String s4 = s1.concat(s2);
 String s5 = s1.concat(s2).concat(s3);
 
-System.out.println(s4);
-System.out.println(s5);
+System.out.println(" string 1 + string 2 is "+s4);
+System.out.println(" string 1 + string 2 + string 3 is "+s5);
 }
 
 }

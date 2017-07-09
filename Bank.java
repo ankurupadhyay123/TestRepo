@@ -1,13 +1,10 @@
-class Bank{
+package myjava;
 
-float rateOfInterest;
-int serviceCharges;	
-int noOfEmployees;
+abstract class Bank{
 
-void getDetails(float rateOfInterest, int serviceCharges, int noOfEmployees){
-this.rateOfInterest = rateOfInterest;
-this.serviceCharges = serviceCharges;
-this.noOfEmployees = noOfEmployees;
-}
+    float rateOfInterest;
+    int serviceCharges;
+    int noOfEmployees;
 
+    abstract void getDetails(float rateOfInterest, int serviceCharges, int noOfEmployees);
 }

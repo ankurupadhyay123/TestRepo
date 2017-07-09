@@ -1,8 +1,6 @@
-class BOI extends Bank{
+package myjava;
 
-float rateOfInterest;
-int serviceCharges;	
-int noOfEmployees;
+class BOI extends Bank{
 
 void getDetails(float rateOfInterest, int serviceCharges, int noOfEmployees){
 this.rateOfInterest = rateOfInterest;
