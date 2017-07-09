@@ -8,10 +8,11 @@ public class Pro3 {
             characterSet.add(c);
         }
 
+	Character obj;
         Set<Character> uniquearray = new HashSet<>(characterSet);
         Iterator<Character> characterIterator = uniquearray.iterator();
         while (characterIterator.hasNext()){
-            Character obj = characterIterator.next();
+            obj = characterIterator.next();
 //TODO: DEclare Character obj outside the loop so that only one reference is created
             System.out.println(obj+" "+Collections.frequency(characterSet,obj));
         }
@@ -20,7 +21,8 @@ public class Pro3 {
     public static void main(String[] args)
     {
 // TODO: Allow User to enter this
-        String name = "My name is ankur";
+	Scanner sc=new Scanner(System.in);  
+	String name = sc.nextLine();
         uniqueChar(name);
     }
 }

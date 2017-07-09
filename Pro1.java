@@ -12,9 +12,10 @@ public class Pro1 {
         floatList.add(4.2f);
         floatList.add(5.2f);
         float sum = 0;
+	Float obj;
         Iterator<Float> floatIterator = floatList.iterator();
         while(floatIterator.hasNext()){
-            Float obj = floatIterator.next();
+            obj = floatIterator.next();
 //TODO: DEclare Float obj outside the loop so that only one reference is created
             sum = sum + obj;
         }

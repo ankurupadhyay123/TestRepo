@@ -7,6 +7,8 @@ public class SpecialStack {
     static List<Integer> stack = new ArrayList<Integer>(maxCapacity);
 
 //TODO: DO we really need this?????
+//yes this can be done through multiple ways but i chose to do it through collections only, as i want to use of already defined collections methods.
+//it can also be done through a for loop at entry condition.
     static List<Integer> sortStack = new ArrayList<>();
 
     int number;

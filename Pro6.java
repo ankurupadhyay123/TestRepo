@@ -5,7 +5,15 @@ public class Pro6 {
    public static void main(String[] args) {
 
 // // TODO: Allow User to enter this
-        int arr[] = {9, 7, 5, 4, 9, 4, 8, 9, 7, 9, 5, 8, 4};
+
+//        int arr[] = {9, 7, 5, 4, 9, 4, 8, 9, 7, 9, 5, 8, 4};
+	int arr[] = new int[10];
+	Scanner sc=new Scanner(System.in);  
+	System.out.println("Enter elements less than 20");
+	for(int i = 0; i<10;i++){
+		arr[i]=sc.nextInt();
+	}
+
         List<PrintNumber> list = new ArrayList<>();
         int flag = 0;
         for (int i : arr) {
